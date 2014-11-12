@@ -16,6 +16,10 @@ $ npm install sails-rest
 
 sails-rest is compatible with Sails.js v0.9.0 and above.
 
+For Sails.js v0.9 please use v0.0.3 version of sails-rest.
+ 
+For Sails.js v0.10 please use v0.0.4 version of sails-rest (or newer).
+
 ## Sails Configuration
 
 Add the following config to the config/adapters.js file:
@@ -31,6 +35,7 @@ module.exports.adapters = {
     host: 'api.somewhere.io', // api host
     port: 80,                 // api port
     protocol: 'http',         // HTTP protocol (http | https)
+    rejectUnauthorized: true, // prevent https connections that use a self-signed certificate
     pathname: '/api/v1'       // base api path
     resource: null,           // resource path to use (overrides model name)
     action: null,             // action to use for the given resource ([resource]/run)
