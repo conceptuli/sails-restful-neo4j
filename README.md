@@ -78,7 +78,7 @@ module.exports.connections = {
       
       update_relProperties: 'put',
       remove_relProperties: 'del',
-      remove_the_relProperty: 'del,
+      remove_the_relProperty: 'del',
       add_nodeLabel: 'post',
       add_nodeLabels: 'post',
       change_nodeLabel: 'put',
